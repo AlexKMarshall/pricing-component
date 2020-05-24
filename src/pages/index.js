@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <div className="container mx-auto flex flex-col items-center">
+      <div className="container mx-auto flex flex-col items-stretch text-center">
         <h1 className="text-3nHalfxl tracking-wide mt-20 mb-12">Our Pricing</h1>
         <form className="mb-20">
           <input
