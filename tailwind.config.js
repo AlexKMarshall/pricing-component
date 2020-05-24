@@ -19,6 +19,9 @@ module.exports = {
         `"Noto Color Emoji"`,
       ],
     },
+    fontSize: {
+      "3nHalfxl": "2rem",
+    },
     extend: {},
   },
   variants: {},
