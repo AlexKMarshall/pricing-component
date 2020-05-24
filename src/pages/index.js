@@ -17,21 +17,21 @@ const IndexPage = () => (
     <label htmlFor="monthly">Monthly</label>
     <PricingTier
       tierName="Basic"
-      monthlyRate="19.99"
+      monthlyRate={getPrice("basic", "monthly")}
       storage="500 GB"
       users="2"
       transferLimit="3 GB"
     />
     <PricingTier
       tierName="Professional"
-      monthlyRate="24.99"
+      monthlyRate={getPrice("professional", "monthly")}
       storage="1 TB"
       users="5"
       transferLimit="10 GB"
     />
     <PricingTier
       tierName="Master"
-      monthlyRate="39.99"
+      monthlyRate={getPrice("master", "monthly")}
       storage="2 TB"
       users="10"
       transferLimit="20 GB"
@@ -52,6 +52,16 @@ function PricingTier({ tierName, monthlyRate, storage, users, transferLimit }) {
       <button>Learn more</button>
     </>
   );
+}
+
+function getPrice(pricingTier, billingFrequency) {
+  const priceList = {
+    basic: { monthly: "19.99", annually: "199.99" },
+    professional: { monthly: "24.99", annually: "249.99" },
+    master: { monthly: "39.99", annually: "399.99" },
+  };
+
+  return priceList[pricingTier][billingFrequency];
 }
 
 export default IndexPage;
