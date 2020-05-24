@@ -67,7 +67,7 @@ const IndexPage = () => {
     transferLimit,
   }) {
     return (
-      <>
+      <div className="bg-red-500 mx-6">
         <h2 className="text-xl">{tierName}</h2>
         <div className="text-7xl">
           <span className="text-5xl">$</span>
@@ -79,7 +79,7 @@ const IndexPage = () => {
           <li>Send up to {transferLimit}</li>
         </ul>
         <button>Learn more</button>
-      </>
+      </div>
     );
   }
 };
