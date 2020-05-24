@@ -15,23 +15,43 @@ const IndexPage = () => (
     <label htmlFor="annually">Annually</label>
     <input type="radio" name="billing-frequency" id="monthly" value="monthly" />
     <label htmlFor="monthly">Monthly</label>
-    <h2>Basic</h2>
-    <div>$19.99</div>
-    <ul>
-      <li>500 GB Storage</li>
-      <li>2 Users Allowed</li>
-      <li>Send up to 3 GB</li>
-    </ul>
-    <button>Learn more</button>
-    <h2>Professional</h2>
-    <div>$24.99</div>
-    <ul>
-      <li>1 TB Storage</li>
-      <li>5 Users Allowed</li>
-      <li>Send up to 10 GB</li>
-    </ul>
-    <button>Learn more</button>
+    <PricingTier
+      tierName="Basic"
+      monthlyRate="19.99"
+      storage="500 GB"
+      users="2"
+      transferLimit="3 GB"
+    />
+    <PricingTier
+      tierName="Professional"
+      monthlyRate="24.99"
+      storage="1 TB"
+      users="5"
+      transferLimit="10 GB"
+    />
+    <PricingTier
+      tierName="Master"
+      monthlyRate="39.99"
+      storage="2 TB"
+      users="10"
+      transferLimit="20 GB"
+    />
   </>
 );
+
+function PricingTier({ tierName, monthlyRate, storage, users, transferLimit }) {
+  return (
+    <>
+      <h2>{tierName}</h2>
+      <div>${monthlyRate}</div>
+      <ul>
+        <li>{storage} Storage</li>
+        <li>{users} Users Allowed</li>
+        <li>Send up to {transferLimit}</li>
+      </ul>
+      <button>Learn more</button>
+    </>
+  );
+}
 
 export default IndexPage;
