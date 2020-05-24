@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <h1>Our Pricing</h1>
+      <h1 className="">Our Pricing</h1>
       <input
         type="radio"
         name="billing-frequency"
