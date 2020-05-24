@@ -23,6 +23,14 @@ const IndexPage = () => (
       <li>Send up to 3 GB</li>
     </ul>
     <button>Learn more</button>
+    <h2>Professional</h2>
+    <div>$24.99</div>
+    <ul>
+      <li>1 TB Storage</li>
+      <li>5 Users Allowed</li>
+      <li>Send up to 10 GB</li>
+    </ul>
+    <button>Learn more</button>
   </>
 );
 
