@@ -33,21 +33,21 @@ const IndexPage = () => {
       <label htmlFor="monthly">Monthly</label>
       <PricingTier
         tierName="Basic"
-        monthlyRate={getPrice("basic", "monthly")}
+        monthlyRate={getPrice("basic", billingFrequency)}
         storage="500 GB"
         users="2"
         transferLimit="3 GB"
       />
       <PricingTier
         tierName="Professional"
-        monthlyRate={getPrice("professional", "monthly")}
+        monthlyRate={getPrice("professional", billingFrequency)}
         storage="1 TB"
         users="5"
         transferLimit="10 GB"
       />
       <PricingTier
         tierName="Master"
-        monthlyRate={getPrice("master", "monthly")}
+        monthlyRate={getPrice("master", billingFrequency)}
         storage="2 TB"
         users="10"
         transferLimit="20 GB"
