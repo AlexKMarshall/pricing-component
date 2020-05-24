@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <h1 className="text-3nHalfxl tracking-wide">Our Pricing</h1>
+      <h1 className="text-3nHalfxl tracking-wide mt-20">Our Pricing</h1>
       <input
         type="radio"
         name="billing-frequency"
