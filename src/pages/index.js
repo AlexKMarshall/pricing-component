@@ -74,7 +74,7 @@ const IndexPage = () => {
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
-        <ul>
+        <ul className="border-t border-b divide-y">
           <li>{storage} Storage</li>
           <li>{users} Users Allowed</li>
           <li>Send up to {transferLimit}</li>
