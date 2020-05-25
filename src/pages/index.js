@@ -9,6 +9,12 @@ const IndexPage = () => {
     setBillingFrequency(event.target.value);
   };
 
+  const toggleFrequency = () => {
+    setBillingFrequency((prev) =>
+      prev === "annually" ? "monthly" : "annually"
+    );
+  };
+
   return (
     <>
       <SEO title="Home" />
@@ -30,6 +36,8 @@ const IndexPage = () => {
             />
             <div
               className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right`}
+              onClick={toggleFrequency}
+              aria-hidden={true}
             >
               <div
                 className={`slider w-8 h-8 rounded-full bg-white transform scale-90
