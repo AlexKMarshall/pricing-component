@@ -35,7 +35,7 @@ const IndexPage = () => {
               value="annually"
             />
             <div
-              className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right`}
+              className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right cursor-pointer`}
               onClick={toggleFrequency}
               aria-hidden={true}
             >
