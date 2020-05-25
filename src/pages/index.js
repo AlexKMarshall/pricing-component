@@ -69,8 +69,8 @@ const IndexPage = () => {
   }) {
     return (
       <div className="bg-red-500 mx-6 mb-8 last:mb-20 p-8">
-        <h2 className="text-xl">{tierName}</h2>
-        <div className="text-7xl">
+        <h2 className="text-xl mb-6">{tierName}</h2>
+        <div className="text-7xl leading-none mb-6">
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
