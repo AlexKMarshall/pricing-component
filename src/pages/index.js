@@ -72,13 +72,13 @@ const IndexPage = () => {
     transferLimit,
   }) {
     return (
-      <div className="bg-red-500 mx-6 mb-8 last:mb-20 p-8 rounded-xl">
+      <div className="mx-6 mb-8 last:mb-20 p-8 rounded-xl bg-white">
         <h2 className="text-xl mb-6">{tierName}</h2>
         <div className="text-7xl leading-none mb-6 text-gray-blue-dark">
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
-        <ul className="border-t border-b divide-y mb-8">
+        <ul className="border-t border-b divide-y border-gray-blue-light divide-gray-blue-light border-opacity-75 divide-opacity-75 mb-8">
           <li className="py-4">{storage} Storage</li>
           <li className="py-4">{users} Users Allowed</li>
           <li className="py-4">Send up to {transferLimit}</li>
