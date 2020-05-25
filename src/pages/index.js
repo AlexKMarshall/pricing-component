@@ -82,7 +82,16 @@ const IndexPage = () => {
       buttonText: "white",
     };
 
-    const colors = normalColors;
+    const highlightedColors = {
+      bg: "blue-500",
+      text: "white",
+      boldText: "white",
+      divider: "white",
+      button: "white",
+      buttonText: "blue-500",
+    };
+
+    const colors = highlighted ? highlightedColors : normalColors;
 
     return (
       <div
