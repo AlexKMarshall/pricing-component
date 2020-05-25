@@ -18,6 +18,10 @@
   background-image: linear-gradient(to bottom right, #a3adf0, #696fdd);
 }
 
+.bg-pattern-top {
+  background-image: url(./../images/bg-top.svg);
+}
+
 @variants hover, focus {
   .bg-none {
     background-image: none;

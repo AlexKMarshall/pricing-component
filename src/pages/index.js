@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import SEO from "../components/seo";
 
-import bgPatternTop from "./../images/bg-top.svg";
+// import bgPatternTop from "./../images/bg-top.svg";
 
 const IndexPage = () => {
   const [billingFrequency, setBillingFrequency] = useState("monthly");
@@ -20,10 +20,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
-      <div
-        className="w-full min-h-screen bg-gray-blue-very-light bg-no-repeat bg-right-top"
-        style={{ backgroundImage: `url(${bgPatternTop})` }}
-      >
+      <div className="w-full min-h-screen bg-gray-blue-very-light bg-no-repeat bg-right-top bg-pattern-top">
         <div className="container mx-auto flex flex-col items-stretch text-center text-gray-blue">
           <h1 className="text-3nHalfxl tracking-wide mt-20 mb-12">
             Our Pricing
