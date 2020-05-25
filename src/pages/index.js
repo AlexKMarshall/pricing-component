@@ -68,7 +68,7 @@ const IndexPage = () => {
     transferLimit,
   }) {
     return (
-      <div className="bg-red-500 mx-6 mb-8 last:mb-20 p-8">
+      <div className="bg-red-500 mx-6 mb-8 last:mb-20 p-8 rounded-xl">
         <h2 className="text-xl mb-6">{tierName}</h2>
         <div className="text-7xl leading-none mb-6">
           <span className="text-5xl">$</span>
@@ -79,7 +79,9 @@ const IndexPage = () => {
           <li className="py-4">{users} Users Allowed</li>
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
-        <button className="bg-blue-500 w-full p-4 uppercase">Learn more</button>
+        <button className="bg-blue-500 w-full p-4 uppercase rounded-md">
+          Learn more
+        </button>
       </div>
     );
   }
