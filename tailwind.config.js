@@ -35,6 +35,8 @@ module.exports = {
     },
     extend: {},
   },
-  variants: {},
+  variants: {
+    margin: ["responsive", "last", "first"],
+  },
   plugins: [],
 };
