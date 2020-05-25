@@ -50,6 +50,7 @@ module.exports = {
           default: "#6D708D",
           dark: "#494C5F",
         },
+        highlight: "#696fdd",
       },
     },
   },

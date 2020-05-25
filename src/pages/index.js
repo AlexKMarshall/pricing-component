@@ -88,7 +88,7 @@ const IndexPage = () => {
       boldText: "white",
       divider: "white",
       button: "white",
-      buttonText: "blue-500",
+      buttonText: "highlight",
     };
 
     const colors = highlighted ? highlightedColors : normalColors;
