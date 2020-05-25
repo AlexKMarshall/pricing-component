@@ -64,7 +64,10 @@ const IndexPage = () => {
             />
             <label htmlFor="monthly">Monthly</label>
           </form>
-          <div className="mx-6 mb-20 space-y-8 flex flex-col">
+          <div
+            className={`mx-6 mb-20 space-y-8 flex flex-col
+              lg:flex-row lg:space-y-0 lg:justify-center lg:items-center`}
+          >
             <PricingTier
               tierName="Basic"
               monthlyRate={getPrice("basic", billingFrequency)}
@@ -109,6 +112,7 @@ const IndexPage = () => {
       divider: "gray-blue-light",
       button: "gradient-right",
       buttonText: { normal: "white", hover: "highlight" },
+      yPadding: "8",
     };
 
     const highlightedColors = {
@@ -118,13 +122,15 @@ const IndexPage = () => {
       divider: "white",
       button: "white",
       buttonText: { normal: "highlight", hover: "white" },
+      yPadding: "16",
     };
 
     const colors = highlighted ? highlightedColors : normalColors;
 
     return (
       <div
-        className={`p-8 rounded-xl bg-${colors.bg} text-${colors.text} shadow-md`}
+        className={`p-8 py-${colors.yPadding} rounded-xl bg-${colors.bg} text-${colors.text} shadow-md`}
+        style={{ minWidth: "23rem" }} // so content doesn't shrink and grow when changing between prices
       >
         <h2 className="text-xl mb-6">{tierName}</h2>
         <div className={`text-7xl leading-none mb-6 text-${colors.boldText}`}>
