@@ -47,7 +47,7 @@ module.exports = {
         "gray-blue": {
           "very-light": "#F6F6FE",
           light: "#B3B5C6",
-          default: "6D708D",
+          default: "#6D708D",
           dark: "#494C5F",
         },
       },
