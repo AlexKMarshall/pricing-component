@@ -74,12 +74,12 @@ const IndexPage = () => {
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
-        <ul className="border-t border-b divide-y">
+        <ul className="border-t border-b divide-y mb-8">
           <li className="py-4">{storage} Storage</li>
           <li className="py-4">{users} Users Allowed</li>
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
-        <button>Learn more</button>
+        <button className="bg-blue-500 w-full p-4">Learn more</button>
       </div>
     );
   }
