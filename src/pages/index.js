@@ -33,7 +33,8 @@ const IndexPage = () => {
             >
               <div
                 className={`slider w-8 h-8 rounded-full bg-white transform scale-90
-               ${billingFrequency === "monthly" ? "translate-x-8" : ""}`}
+               ${billingFrequency === "monthly" ? "translate-x-8" : ""}
+               transition-transform duration-300 ease-in-out`}
               ></div>
             </div>
             <input
