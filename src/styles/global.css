@@ -18,8 +18,15 @@
   background-image: linear-gradient(to bottom right, #a3adf0, #696fdd);
 }
 
-.bg-pattern-top {
-  background-image: url(./../images/bg-top.svg);
+@responsive {
+  .bg-pattern-top {
+    background: no-repeat top right url(./../images/bg-top.svg);
+  }
+
+  .bg-pattern-both {
+    background: no-repeat top right url(./../images/bg-top.svg),
+      no-repeat bottom left url(./../images/bg-bottom.svg);
+  }
 }
 
 @variants hover, focus {
