@@ -22,11 +22,13 @@
 @responsive {
   .bg-pattern-top {
     background: no-repeat top right url(./../images/bg-top.svg);
+    background-color: theme("colors.gray-blue.very-light");
   }
 
   .bg-pattern-both {
     background: no-repeat top right url(./../images/bg-top.svg),
       no-repeat bottom left url(./../images/bg-bottom.svg);
+    background-color: theme("colors.gray-blue.very-light");
   }
 }
 
