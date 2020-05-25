@@ -110,7 +110,7 @@ const IndexPage = () => {
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
         <button
-          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText} bg-${colors.button}`}
+          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText} bg-${colors.button} hover:bg-none`}
         >
           Learn more
         </button>

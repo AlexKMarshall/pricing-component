@@ -17,3 +17,10 @@
 .bg-gradient-bottom-right {
   background-image: linear-gradient(to bottom right, #a3adf0, #696fdd);
 }
+
+@variants hover, focus {
+  .bg-none {
+    background-image: none;
+    background: none;
+  }
+}
