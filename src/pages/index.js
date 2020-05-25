@@ -18,7 +18,9 @@ const IndexPage = () => {
             Our Pricing
           </h1>
           <form className="mb-20 text-gray-blue-light">
+            <label htmlFor="annually">Annually</label>
             <input
+              className="hidden"
               type="radio"
               name="billing-frequency"
               id="annually"
@@ -26,8 +28,8 @@ const IndexPage = () => {
               onChange={handleOptionChange}
               value="annually"
             />
-            <label htmlFor="annually">Annually</label>
             <input
+              className="hidden"
               type="radio"
               name="billing-frequency"
               id="monthly"
