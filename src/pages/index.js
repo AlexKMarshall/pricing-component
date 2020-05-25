@@ -110,7 +110,11 @@ const IndexPage = () => {
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
         <button
-          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText.normal} hover:text-${colors.buttonText.hover} focus:text-${colors.buttonText.hover}  bg-${colors.button} hover:bg-none focus:bg-none`}
+          className={`w-full p-4 uppercase rounded-md 
+          text-${colors.buttonText.normal} hover:text-${colors.buttonText.hover} focus:text-${colors.buttonText.hover} 
+          bg-${colors.button} hover:bg-none focus:bg-none
+          border-2 border-transparent hover:border-${colors.divider} focus:border-${colors.divider}`}
+          style={{ backgroundSize: "110%", backgroundPositionX: "-2px" }} //Style hack to deal with transparent borders on gradient with border-radius
         >
           Learn more
         </button>

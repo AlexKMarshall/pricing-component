@@ -40,6 +40,7 @@ module.exports = {
       md: "0.375rem",
       lg: "0.5rem",
       xl: "0.75rem",
+      xxl: "1rem",
       full: "9999px",
     },
     extend: {
@@ -55,6 +56,7 @@ module.exports = {
     },
   },
   variants: {
+    borderWidth: ["responsive", "hover", "focus"],
     margin: ["responsive", "last", "first"],
   },
   plugins: [],
