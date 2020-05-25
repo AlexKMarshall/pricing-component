@@ -79,7 +79,7 @@ const IndexPage = () => {
           <li className="py-4">{users} Users Allowed</li>
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
-        <button className="bg-blue-500 w-full p-4">Learn more</button>
+        <button className="bg-blue-500 w-full p-4 uppercase">Learn more</button>
       </div>
     );
   }
