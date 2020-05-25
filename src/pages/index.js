@@ -87,6 +87,27 @@ const IndexPage = () => {
               className="mb-0"
             />
           </div>
+          <footer className="mb-4">
+            <div>
+              Challenge by{" "}
+              <a
+                className="text-highlight underline"
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Frontend Mentor
+              </a>
+              . Coded by{" "}
+              <a
+                className="text-highlight underline"
+                href="https://github.com/AlexKMarshall"
+              >
+                Alex Marshall
+              </a>
+              .
+            </div>
+          </footer>
         </div>
       </div>
     </>
