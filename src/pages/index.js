@@ -64,7 +64,7 @@ const IndexPage = () => {
             />
             <label htmlFor="monthly">Monthly</label>
           </form>
-          <div className="mx-6 mb-20 space-y-8">
+          <div className="mx-6 mb-20 space-y-8 flex flex-col">
             <PricingTier
               tierName="Basic"
               monthlyRate={getPrice("basic", billingFrequency)}
