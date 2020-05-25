@@ -78,7 +78,7 @@ const IndexPage = () => {
       text: "current",
       boldText: "gray-blue-dark",
       divider: "gray-blue-light",
-      button: "blue-500",
+      button: "gradient-right",
       buttonText: "white",
     };
 

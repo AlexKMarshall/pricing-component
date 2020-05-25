@@ -9,3 +9,7 @@
 :root {
   font-size: 15px;
 }
+
+.bg-gradient-right {
+  background-image: linear-gradient(to right, #a3adf0, #696fdd);
+}
