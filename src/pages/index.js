@@ -79,7 +79,7 @@ const IndexPage = () => {
       boldText: "gray-blue-dark",
       divider: "gray-blue-light",
       button: "gradient-right",
-      buttonText: "white",
+      buttonText: { normal: "white", hover: "highlight" },
     };
 
     const highlightedColors = {
@@ -88,7 +88,7 @@ const IndexPage = () => {
       boldText: "white",
       divider: "white",
       button: "white",
-      buttonText: "highlight",
+      buttonText: { normal: "highlight", hover: "white" },
     };
 
     const colors = highlighted ? highlightedColors : normalColors;
@@ -110,7 +110,7 @@ const IndexPage = () => {
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
         <button
-          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText} bg-${colors.button} hover:bg-none`}
+          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText.normal} hover:text-${colors.buttonText.hover} focus:text-${colors.buttonText.hover}  bg-${colors.button} hover:bg-none focus:bg-none`}
         >
           Learn more
         </button>
