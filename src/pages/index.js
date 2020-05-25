@@ -64,29 +64,31 @@ const IndexPage = () => {
             />
             <label htmlFor="monthly">Monthly</label>
           </form>
-          <PricingTier
-            tierName="Basic"
-            monthlyRate={getPrice("basic", billingFrequency)}
-            storage="500 GB"
-            users="2"
-            transferLimit="3 GB"
-          />
-          <PricingTier
-            tierName="Professional"
-            monthlyRate={getPrice("professional", billingFrequency)}
-            storage="1 TB"
-            users="5"
-            transferLimit="10 GB"
-            highlighted={true}
-          />
-          <PricingTier
-            tierName="Master"
-            monthlyRate={getPrice("master", billingFrequency)}
-            storage="2 TB"
-            users="10"
-            transferLimit="20 GB"
-            className="mb-0"
-          />
+          <div className="mx-6 mb-20 space-y-8">
+            <PricingTier
+              tierName="Basic"
+              monthlyRate={getPrice("basic", billingFrequency)}
+              storage="500 GB"
+              users="2"
+              transferLimit="3 GB"
+            />
+            <PricingTier
+              tierName="Professional"
+              monthlyRate={getPrice("professional", billingFrequency)}
+              storage="1 TB"
+              users="5"
+              transferLimit="10 GB"
+              highlighted={true}
+            />
+            <PricingTier
+              tierName="Master"
+              monthlyRate={getPrice("master", billingFrequency)}
+              storage="2 TB"
+              users="10"
+              transferLimit="20 GB"
+              className="mb-0"
+            />
+          </div>
         </div>
       </div>
     </>
@@ -122,7 +124,7 @@ const IndexPage = () => {
 
     return (
       <div
-        className={`mx-6 mb-8 last:mb-20 p-8 rounded-xl bg-${colors.bg} text-${colors.text} shadow-md`}
+        className={`p-8 rounded-xl bg-${colors.bg} text-${colors.text} shadow-md`}
       >
         <h2 className="text-xl mb-6">{tierName}</h2>
         <div className={`text-7xl leading-none mb-6 text-${colors.boldText}`}>
