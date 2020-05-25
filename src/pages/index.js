@@ -29,10 +29,13 @@ const IndexPage = () => {
               value="annually"
             />
             <div
-              className={`w-16 h-8 mx-6 rounded-full bg-${
-                billingFrequency === "annually" ? "red-500" : "blue-500"
-              }`}
-            ></div>
+              className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right`}
+            >
+              <div
+                className={`slider w-8 h-8 rounded-full bg-white transform scale-90
+               ${billingFrequency === "monthly" ? "translate-x-8" : ""}`}
+              ></div>
+            </div>
             <input
               className="hidden"
               type="radio"
