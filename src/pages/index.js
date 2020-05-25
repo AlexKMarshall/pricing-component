@@ -29,7 +29,7 @@ const IndexPage = () => {
               value="annually"
             />
             <div
-              className={`w-16 h-8 mx-6 bg-${
+              className={`w-16 h-8 mx-6 rounded-full bg-${
                 billingFrequency === "annually" ? "red-500" : "blue-500"
               }`}
             ></div>
