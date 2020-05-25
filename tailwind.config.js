@@ -42,7 +42,16 @@ module.exports = {
       xl: "0.75rem",
       full: "9999px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "gray-blue": {
+          "very-light": "#F6F6FE",
+          light: "#B3B5C6",
+          default: "6D708D",
+          dark: "#494C5F",
+        },
+      },
+    },
   },
   variants: {
     margin: ["responsive", "last", "first"],
