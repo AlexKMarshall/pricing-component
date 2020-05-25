@@ -75,9 +75,9 @@ const IndexPage = () => {
           {monthlyRate}
         </div>
         <ul className="border-t border-b divide-y">
-          <li>{storage} Storage</li>
-          <li>{users} Users Allowed</li>
-          <li>Send up to {transferLimit}</li>
+          <li className="py-4">{storage} Storage</li>
+          <li className="py-4">{users} Users Allowed</li>
+          <li className="py-4">Send up to {transferLimit}</li>
         </ul>
         <button>Learn more</button>
       </div>
