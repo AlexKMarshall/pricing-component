@@ -35,7 +35,10 @@ const IndexPage = () => {
               value="annually"
             />
             <div
-              className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right cursor-pointer`}
+              className={`track w-16 h-8 mx-6 rounded-full bg-gradient-right bg-transparent
+               hover:bg-white hover:bg-opacity-50 cursor-pointer
+               transition-colors duration-300 ease-in-out`}
+              style={{ backgroundBlendMode: "screen" }}
               onClick={toggleFrequency}
               aria-hidden={true}
             >

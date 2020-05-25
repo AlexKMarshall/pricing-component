@@ -23,4 +23,8 @@
     background-image: none;
     background: none;
   }
+
+  .bg-gradient-none {
+    background-image: none;
+  }
 }
