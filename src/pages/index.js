@@ -50,6 +50,7 @@ const IndexPage = () => {
             storage="1 TB"
             users="5"
             transferLimit="10 GB"
+            highlighted={true}
           />
           <PricingTier
             tierName="Master"
@@ -70,20 +71,38 @@ const IndexPage = () => {
     storage,
     users,
     transferLimit,
+    highlighted,
   }) {
+    const normalColors = {
+      bg: "white",
+      text: "current",
+      boldText: "gray-blue-dark",
+      divider: "gray-blue-light",
+      button: "blue-500",
+      buttonText: "white",
+    };
+
+    const colors = normalColors;
+
     return (
-      <div className="mx-6 mb-8 last:mb-20 p-8 rounded-xl bg-white shadow-md">
+      <div
+        className={`mx-6 mb-8 last:mb-20 p-8 rounded-xl bg-${colors.bg} text-${colors.text} shadow-md`}
+      >
         <h2 className="text-xl mb-6">{tierName}</h2>
-        <div className="text-7xl leading-none mb-6 text-gray-blue-dark">
+        <div className={`text-7xl leading-none mb-6 text-${colors.boldText}`}>
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
-        <ul className="border-t border-b divide-y border-gray-blue-light divide-gray-blue-light border-opacity-75 divide-opacity-75 mb-8">
+        <ul
+          className={`border-t border-b divide-y border-${colors.divider} divide-${colors.divider} border-opacity-75 divide-opacity-75 mb-8`}
+        >
           <li className="py-4">{storage} Storage</li>
           <li className="py-4">{users} Users Allowed</li>
           <li className="py-4">Send up to {transferLimit}</li>
         </ul>
-        <button className="bg-blue-500 w-full p-4 uppercase rounded-md text-white">
+        <button
+          className={`w-full p-4 uppercase rounded-md text-${colors.buttonText} bg-${colors.button}`}
+        >
           Learn more
         </button>
       </div>
