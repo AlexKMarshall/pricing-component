@@ -17,7 +17,7 @@ const IndexPage = () => {
           <h1 className="text-3nHalfxl tracking-wide mt-20 mb-12">
             Our Pricing
           </h1>
-          <form className="mb-20 text-gray-blue-light">
+          <form className="flex justify-center mb-20 text-gray-blue-light">
             <label htmlFor="annually">Annually</label>
             <input
               className="hidden"
@@ -28,6 +28,7 @@ const IndexPage = () => {
               onChange={handleOptionChange}
               value="annually"
             />
+            <div className="w-16 h-8 bg-red-500"></div>
             <input
               className="hidden"
               type="radio"
