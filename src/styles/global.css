@@ -13,3 +13,7 @@
 .bg-gradient-right {
   background-image: linear-gradient(to right, #a3adf0, #696fdd);
 }
+
+.bg-gradient-bottom-right {
+  background-image: linear-gradient(to bottom right, #a3adf0, #696fdd);
+}

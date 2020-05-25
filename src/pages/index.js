@@ -83,7 +83,7 @@ const IndexPage = () => {
     };
 
     const highlightedColors = {
-      bg: "blue-500",
+      bg: "gradient-bottom-right",
       text: "white",
       boldText: "white",
       divider: "white",
