@@ -17,7 +17,7 @@ const IndexPage = () => {
           <h1 className="text-3nHalfxl tracking-wide mt-20 mb-12">
             Our Pricing
           </h1>
-          <form className="mb-20">
+          <form className="mb-20 text-gray-blue-light">
             <input
               type="radio"
               name="billing-frequency"
