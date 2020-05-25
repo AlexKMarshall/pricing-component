@@ -133,7 +133,9 @@ const IndexPage = () => {
         style={{ minWidth: "23rem" }} // so content doesn't shrink and grow when changing between prices
       >
         <h2 className="text-xl mb-6">{tierName}</h2>
-        <div className={`text-7xl leading-none mb-6 text-${colors.boldText}`}>
+        <div
+          className={`text-7xl leading-none mb-6 text-${colors.boldText} flex flex-row justify-center items-center`}
+        >
           <span className="text-5xl">$</span>
           {monthlyRate}
         </div>
