@@ -56,7 +56,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `${site.canonicalUrl}${defaultMetaImage}`,
+          content: `${site.siteMetadata.canonicalUrl}${defaultMetaImage}`,
         },
         {
           name: `twitter:card`,
