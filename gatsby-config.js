@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Pricing Component`,
+    title: `Better Storage Solutions`,
     description: `Select your storage plan option`,
     author: `@alexkmarshall1`,
+    canonicalUrl: `https://pensive-wilson-d8ed50.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-postcss`,

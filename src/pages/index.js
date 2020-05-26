@@ -17,7 +17,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Pricing" />
       <div className="w-full min-h-screen bg-pattern-top lg:bg-pattern-both">
         <div className="container mx-auto flex flex-col items-stretch text-center text-gray-blue">
           <h1 className="text-3nHalfxl tracking-wide mt-20 mb-12">
