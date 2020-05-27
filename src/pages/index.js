@@ -63,7 +63,7 @@ const IndexPage = () => {
             className={`mx-6 mb-20 space-y-8 flex flex-col
               lg:flex-row lg:space-y-0 lg:justify-center lg:items-center`}
           >
-            <PricingTier
+            <PricingTierOld
               tierName="Basic"
               monthlyRate={getPrice("basic", billingFrequency)}
               storage="500 GB"
@@ -78,7 +78,7 @@ const IndexPage = () => {
               transferLimit="10 GB"
               highlighted={true}
             />
-            <PricingTier
+            <PricingTierOld
               tierName="Master"
               monthlyRate={getPrice("master", billingFrequency)}
               storage="2 TB"
@@ -114,6 +114,69 @@ const IndexPage = () => {
   );
 
   function PricingTier({
+    tierName,
+    monthlyRate,
+    storage,
+    users,
+    transferLimit,
+    highlighted,
+  }) {
+    const normalColors = {
+      bg: "white",
+      text: "current",
+      boldText: "gray-blue-dark",
+      divider: "gray-blue-light",
+      button: "gradient-right",
+      buttonText: { normal: "white", hover: "highlight" },
+      yPadding: "8",
+    };
+
+    const highlightedColors = {
+      bg: "gradient-bottom-right",
+      text: "white",
+      boldText: "white",
+      divider: "white",
+      button: "white",
+      buttonText: { normal: "highlight", hover: "white" },
+      yPadding: "16",
+    };
+
+    const colors = highlighted ? highlightedColors : normalColors;
+
+    return (
+      <div
+        className={`p-8 py-16 rounded-xl bg-gradient-bottom-right text-white shadow-md`}
+        style={{ minWidth: "23rem" }} // so content doesn't shrink and grow when changing between prices
+      >
+        <h2 className="text-xl mb-6">{tierName}</h2>
+        <div
+          className={`text-7xl leading-none mb-6 text-${colors.boldText} flex flex-row justify-center items-center`}
+        >
+          <span className="text-5xl">$</span>
+          {monthlyRate}
+        </div>
+        <ul
+          className={`border-t border-b divide-y border-${colors.divider} divide-${colors.divider} border-opacity-75 divide-opacity-75 mb-8`}
+        >
+          <li className="py-4">{storage} Storage</li>
+          <li className="py-4">{users} Users Allowed</li>
+          <li className="py-4">Send up to {transferLimit}</li>
+        </ul>
+        <button
+          className={`w-full p-4 uppercase rounded-md 
+          text-${colors.buttonText.normal} hover:text-${colors.buttonText.hover} focus:text-${colors.buttonText.hover} 
+          bg-${colors.button} hover:bg-none focus:bg-none
+          border-2 border-transparent hover:border-${colors.divider} focus:border-${colors.divider} focus:outline-none
+          transition-colors duration-300 ease-in-out`}
+          style={{ backgroundSize: "110%", backgroundPositionX: "-2px" }} //Style hack to deal with transparent borders on gradient with border-radius
+        >
+          Learn more
+        </button>
+      </div>
+    );
+  }
+
+  function PricingTierOld({
     tierName,
     monthlyRate,
     storage,
